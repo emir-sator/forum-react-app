@@ -1,0 +1,21 @@
+h2{
+    font-weight: bold;
+}
+
+.rows{
+margin-top: 20px;
+}
+
+.btn{
+margin-left: 20px;
+float: left;
+}
+
+.input{
+    width: 400px;
+    float: left;
+}
+
+.theadcolor{
+    background-color:#F5F5F5;
+}
