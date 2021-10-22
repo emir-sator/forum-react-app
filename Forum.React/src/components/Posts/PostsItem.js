@@ -24,9 +24,6 @@ const PostsItem = ({ item }) => {
                 </Collapse>
 
                 </td>
-               
-
-                {/* <td>{item.body}</td>  */}
             </tr>
     )
 }

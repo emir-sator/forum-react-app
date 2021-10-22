@@ -27,7 +27,7 @@ const LoginForm = () => {
             })
         });
 
-        if(user.ok==true){
+        if(user.ok===true){
         setRedirect(true);
         }
         else{

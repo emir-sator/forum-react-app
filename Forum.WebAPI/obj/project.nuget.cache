@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UVnB3GRGAHtxiheJICMV1fok4EsWd/T8wCkSN5zzWbfKzaW+1bxtdI2M3xd7EGrFEDEA4M+9H/bKApx0p+1oQg==",
+  "dgSpecHash": "P8z8pyU+g9CWX4km/epIyRxr26g/NlVQoVuTrNnpkHrtovF1JPOek5cma+LEe76U0/q2ZvgC6EOtZ7qoryznSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emir\\Desktop\\testiranje\\forum-react-app\\Forum.WebAPI\\Forum.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Emir\\Desktop\\source as zadatak\\nmovi\\forum-react-app\\Forum.WebAPI\\Forum.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emir\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Emir\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

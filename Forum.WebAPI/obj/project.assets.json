@@ -5952,11 +5952,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Emir\\Desktop\\testiranje\\forum-react-app\\Forum.WebAPI\\Forum.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Emir\\Desktop\\source as zadatak\\nmovi\\forum-react-app\\Forum.WebAPI\\Forum.WebAPI.csproj",
       "projectName": "Forum.WebAPI",
-      "projectPath": "C:\\Users\\Emir\\Desktop\\testiranje\\forum-react-app\\Forum.WebAPI\\Forum.WebAPI.csproj",
+      "projectPath": "C:\\Users\\Emir\\Desktop\\source as zadatak\\nmovi\\forum-react-app\\Forum.WebAPI\\Forum.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Emir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Emir\\Desktop\\testiranje\\forum-react-app\\Forum.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Emir\\Desktop\\source as zadatak\\nmovi\\forum-react-app\\Forum.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6065,7 +6065,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
       }
     }
   }

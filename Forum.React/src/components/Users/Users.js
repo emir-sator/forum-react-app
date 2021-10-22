@@ -7,7 +7,7 @@ import UsersItem from './UsersItem';
 import { environment } from '../../Environments';
 import { Link } from 'react-router-dom';
 
-const Users = ({ Logout }) => {
+const Users = () => {
 
     const [users, setUsers] = useState([]);
     const [paginatedUsers, setPaginetedUsers] = useState([]);
@@ -54,33 +54,6 @@ const Users = ({ Logout }) => {
         setPaginetedUsers(paginatedUser);
     }
 
-    console.log(searchTerm);
-    // const handleSearch = async () => {
-    //     if (searchTerm !== "") {
-    //         const newUsersList = paginatedUsers.filter((e) => {
-    //             const nameLowerCase = e.name.toLocaleLowerCase();
-    //             const usernameLowerCase = e.username.toLocaleLowerCase();
-    //             const filterName = nameLowerCase.match(searchTerm);
-    //             const filterUsername = usernameLowerCase.match(searchTerm);
-
-    //             if (filterName && filterUsername) {
-    //                 const combineData = filterName.concat(filterUsername)
-    //                 return combineData;
-    //             } else if (filterName) {
-    //                 return filterName;
-    //             } else if (filterUsername) {
-    //                 return filterUsername
-    //             }
-
-    //         });
-    //         setPaginetedUsers(newUsersList);
-    //     }
-    //     else {
-    //         const usersWithoutFilter = await fetchUsers();
-    //         setPaginetedUsers(_(usersWithoutFilter).slice(0).take(pageSize).value());
-    //     }
-    // }
-
     const handleSearch = async () => {
         if (searchTerm !== "") {
 
@@ -92,8 +65,6 @@ const Users = ({ Logout }) => {
             setPaginetedUsers(_(paginatedUsers).slice(0).take(pageSize).value());
         }
     }
-
-
 
     const handleLogout = async () => {
         await fetch(environment.API_Url + 'users/logout', {
@@ -117,9 +88,7 @@ const Users = ({ Logout }) => {
             <Row className={classes.rows} style={{ marginTop: "20px" }}>
                 <Col xs="6" sm="12" md={{ size: 6, offset: 3 }}>
                     <FormGroup>
-                        {/* <Input className={classes.input} style={{ float: 'left', width: "400px" }} type="text" onChange={(e) => setSearchTerm(e.target.value)} /> */}
                         <Input className={classes.input} style={{ float: 'left', width: "400px" }} type="text" onChange={(e) => setSearchTerm(e.target.value)} />
-
                     </FormGroup>
                     <Button className={classes.btn} color="primary" onClick={handleSearch}>Search
                         <Link to="/posts">
@@ -127,7 +96,7 @@ const Users = ({ Logout }) => {
                     <Link to="/"><Button style={{ marginLeft: "370px" }} className={classes.btn} onClick={handleLogout} color="secondary">Log out</Button></Link>
                 </Col>
             </Row>
-            {searchedUsers.length != 0 ?
+            {searchedUsers.length !== 0 ?
                 <Row className={classes.rows} style={{ marginTop: "20px" }}>
                     <Col sm="12" md={{ size: 6, offset: 3 }}>
                         <Table>
@@ -148,28 +117,9 @@ const Users = ({ Logout }) => {
                                 }
                             </tbody>
                         </Table>
-
                     </Col>
-
-
-                    {/* <Col sm="12" md={{ size: 6, offset: 5 }}>
-                        <Pagination size="sm" aria-label="Page navigation example">
-                            {
-                                pageCount !== 1 ?
-                                    pages.map((page) => (
-                                        page === currentPage ?
-
-                                            <PaginationItem active>
-                                                <PaginationLink onClick={() => pagination(page)}>{page}</PaginationLink>
-                                            </PaginationItem> :
-                                            <PaginationItem>
-                                                <PaginationLink onClick={() => pagination(page)}>{page}</PaginationLink>
-                                            </PaginationItem>
-                                    )) : null
-                            }
-                        </Pagination>
-                    </Col> */}
                 </Row>
+
                 : <Row className={classes.rows} style={{ marginTop: "20px" }}>
                     <Col sm="12" md={{ size: 6, offset: 3 }}>
                         <Table>
@@ -188,9 +138,7 @@ const Users = ({ Logout }) => {
                                 }
                             </tbody>
                         </Table>
-
                     </Col>
-
 
                     <Col sm="12" md={{ size: 6, offset: 5 }}>
                         <Pagination size="sm" aria-label="Page navigation example">
@@ -210,7 +158,6 @@ const Users = ({ Logout }) => {
                         </Pagination>
                     </Col>
                 </Row>}
-
         </div>
     )
 }
